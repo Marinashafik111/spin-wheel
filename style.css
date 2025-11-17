@@ -1,0 +1,63 @@
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.wheel-container {
+    margin-top: 40px;
+}
+
+.wheel {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px solid #6a00ff; /* البنفسجي */
+    margin: auto;
+    background: conic-gradient(
+        #ff007a 0deg 60deg,     /* فوشيا زي الصورة */
+        #ffd700 60deg 120deg,  /* أصفر */
+        #00baff 120deg 180deg, /* أزرق */
+        #ff7a00 180deg 240deg, /* أورانج */
+        #6a00ff 240deg 300deg, /* بنفسجي */
+        #00e6ac 300deg 360deg  /* Mint زي الصورة */
+    );
+    transition: 5s ease-out;
+}
+
+.spin-btn {
+    margin-top: 25px;
+    background: #6a00ff;
+    color: #fff;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 12px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+}
+
+.popup-content {
+    background: white;
+    margin: 200px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+}
+
+#close {
+    padding: 10px 25px;
+    background: #6a00ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
